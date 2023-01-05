@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Alata', sans-serif;
+}
+
+header {
+    background-image: url(images/desktop/image-hero.jpg);
+    height: 600px;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+#logo-nav {
+    width: 180px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+#menu-fechar {
+    display: none;
+}
+
+#h1-header {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+    border: 1px solid white;
+    width: 500px;
+    padding: 20px;
+}
+
+#section-top {
+    width: 80%;
+    margin: 120px auto;
+    position: relative;
+
+}
+
+#article-section {
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    max-height: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 70px 0 50px 70px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#article-section h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#article-section p {
+    font-weight: 600;
+    color: hsl(0, 0%, 55%);
+    padding-top: 35px;
+    line-height: 25px;
+}
+
+#section-bot {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#tittle {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tittle h2 {
+    font-size: 3em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#tittle button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#tittle button:hover {
+    background-color: black;
+    color: white;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+picture {
+    position: relative;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+picture img {
+    transition: all 0.2s;
+}
+
+picture img:hover {
+    opacity: 30%;
+}
+
+picture h3{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    bottom: 40px;
+    left: 30px;
+    width: 165px;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px black;
+}
+
+picture:hover h3 {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+footer {
+    background-color: black;
+    margin-top: 100px;
+    height: 130px;
+    display: flex;
+}
+
+#div-footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left ul li { 
+    margin-top: 5px;
+    padding-left: 0px;
+    padding-right: 5px; 
+}
+
+#left img {
+    cursor: pointer;
+}
+
+#left ul li a {
+    padding-left: 0;
+    margin-right: 5px;
+    font-size: 0.9em;
+}
+
+#right {
+    color: white;
+}
+
+#right #logo-icon {
+    display: flex;
+    justify-content: end;
+}
+
+#right #logo-icon img {
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#right #logo-icon img:hover {
+    border-bottom: 1px solid white;
+}
+
+#right p {
+    padding-bottom: 5px;
+    font-size: 0.8em;
+    color: hsl(0, 0%, 41%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    display: none;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#menu-ham {
+    cursor: pointer;
+}
+
+#menu-reserva {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    display: none;
+}
+
+#logo-reserva {
+    display: none;
+}
+
+
+@media (max-width: 935px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #section-top {
+        position: inherit;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #article-section {
+        background-color: #fff;
+        position: inherit;
+        width: 80%;
+        margin: auto;
+        padding: 50px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
+}
+
+@media (max-width: 800px) { 
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    #logo-nav {
+        display: none;
+    }
+
+    nav {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.9em;
+        font-weight: 400;
+        display: none;
+    }
+
+    #menu-fechar {
+        display: block;
+        transform: translate(30px, -290px);
+        cursor: pointer;
+    }
+
+
+    #logo-reserva {
+        display: block;
+    }
+
+    #menu-reserva {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+
+    picture {
+        margin: 0 auto;
+    }
+
+    picture img{
+        max-width: 400px;
+    }
+
+    #h1-header {
+        width: 100%;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    header h1 {
+        border: 1px solid white;
+        width: 90%;
+        padding: 20px;
+        margin: auto;
+    }
+
+}
+
+
